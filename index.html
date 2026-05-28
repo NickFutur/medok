@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="scss/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+
+<body>
+
+    <section class="future-mom">
+        <div class="future-mom__container">
+            <div class="future-mom__content">
+                <ul class="future-mom__tags">
+                    <li class="future-mom__tag">
+                        <img class="future-mom__tag-icon" src="img/future-mom-icon.svg" alt="" aria-hidden="true">
+                        <span>Для будущих мам</span>
+                    </li>
+                    <li class="future-mom__tag">
+                        <img class="future-mom__tag-icon" src="img/future-mom-icon.svg" alt="" aria-hidden="true">
+                        <span>Для будущих отцов</span>
+                    </li>
+                </ul>
+
+                <div class="future-mom__body">
+                    <h2 class="future-mom__title">Основной заголовок визуального блока</h2>
+                    <p class="future-mom__description">Сопроводительный текст блока Сопроводительный текст блока
+                        Сопроводительный текст блокаСопроводительный текст блока Сопроводительный текст блока </p>
+
+                    <div class="future-mom__offer">
+                        <div class="future-mom__price">
+                            <span class="future-mom__price-current">2100 ₽</span>
+                            <span class="future-mom__price-old">4585 ₽</span>
+                        </div>
+                        <span class="future-mom__date-badge">до 20 сентября</span>
+                    </div>
+
+                    <div class="future-mom__actions">
+                        <a href="#" class="future-mom__button future-mom__button--primary">Записаться</a>
+                        <a href="#" class="future-mom__button future-mom__button--secondary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="future-mom__media">
+                <picture>
+                    <source media="(min-width: 1024px)"
+                        srcset="img/future-mom-desktop-1x.png 1x, img/future-mom-desktop-2x.png 2x">
+                    <source media="(min-width: 850px)"
+                        srcset="img/future-mom-tablet-1x.png 1x, img/future-mom-tablet-2x.png 2x">
+                    <source media="(min-width: 480px)"
+                        srcset="img/future-mom-mobile-1x.png 1x, img/future-mom-mobile-2x.png 2x">
+                    <img class="future-mom__image" src="img/future-mom-mobile-1x.png"
+                        srcset="img/future-mom-mobile-1x.png 1x, img/future-mom-mobile-2x.png 2x" alt="Будущая мама">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

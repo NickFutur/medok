@@ -1,0 +1,230 @@
+:root {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.future-mom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #feebf7;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.future-mom__container {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 34px;
+  max-width: 1268px;
+  gap: 0px;
+}
+@media (max-width: 850px) {
+  .future-mom__container {
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px 34px;
+  }
+}
+@media (max-width: 480px) {
+  .future-mom__container {
+    padding: 16px;
+  }
+}
+.future-mom__content {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  max-width: 550px;
+  flex-direction: column;
+  gap: 53px;
+  padding: 50px 0px;
+}
+@media (max-width: 850px) {
+  .future-mom__content {
+    padding-top: 32px;
+    padding-bottom: 0px;
+    gap: 12px;
+  }
+}
+.future-mom__tags {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+@media (max-width: 850px) {
+  .future-mom__tags {
+    justify-content: center;
+  }
+}
+.future-mom__tag {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 25px;
+  padding: 13px 36px;
+  background: #ffffff;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 130%;
+  color: #2b1b2e;
+}
+.future-mom__tag-icon {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  aspect-ratio: 1/1;
+}
+.future-mom__body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+@media (max-width: 850px) {
+  .future-mom__body {
+    text-align: center;
+    align-items: center;
+  }
+}
+.future-mom__title {
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 100%;
+  color: #ed6ea7;
+  letter-spacing: -0.02em;
+}
+.future-mom__description {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 140%;
+  color: #000000;
+}
+.future-mom__offer {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  margin-top: 20px;
+}
+@media (max-width: 850px) {
+  .future-mom__offer {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 12px;
+  }
+}
+.future-mom__price {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.future-mom__price-current {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 100%;
+  color: #ed6ea7;
+}
+.future-mom__price-old {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 100%;
+  color: #0f0f0f;
+}
+.future-mom__date-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 10px;
+  padding: 8px 20px;
+  background: #ffffff;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 130%;
+  color: #ed6ea7;
+}
+.future-mom__actions {
+  display: flex;
+  gap: 32px;
+  align-items: baseline;
+  justify-content: flex-start;
+  margin-top: 50px;
+  width: 100%;
+}
+@media (max-width: 850px) {
+  .future-mom__actions {
+    position: absolute;
+    bottom: 0px;
+    padding-bottom: 32px;
+    justify-content: center;
+    margin-top: 0px;
+    padding-top: 50px;
+  }
+  .future-mom__actions::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: linear-gradient(180deg, rgba(254, 235, 247, 0) 0%, #feebf7 66.66%);
+  }
+}
+.future-mom__button {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 110%;
+  color: #ffffff;
+}
+.future-mom__button {
+  display: flex;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+.future-mom__button--primary {
+  width: 100%;
+  max-width: 230px;
+  background: #ed6ea7;
+  border-radius: 15px;
+  padding: 16px 10px;
+}
+.future-mom__button--secondary {
+  gap: 4px;
+  color: #ed6ea7;
+}
+.future-mom__button--secondary::after {
+  content: "";
+  display: block;
+  background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 8L20 16L12 24' stroke='%23ED6EA7' stroke-width='2'/%3E%3C/svg%3E");
+  width: 32px;
+  height: 32px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.future-mom__media {
+  display: flex;
+  flex: 1;
+  align-self: flex-end;
+}
+@media (max-width: 850px) {
+  .future-mom__media {
+    align-self: center;
+    margin-top: 32px;
+  }
+}
+.future-mom__image {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 640px;
+}/*# sourceMappingURL=style.css.map */
