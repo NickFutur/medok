@@ -232,10 +232,65 @@
   max-width: 640px;
 }
 
-@media (max-width: 500px) {
-  .future-mom__container {
-    flex-direction: column;
-    gap: 0px;
-    padding: 0px 34px;
+@media (max-width: 450px) {
+  .future-mom__tag {
+    max-width: 114px;
+    width: 100%;
+    font-size: 7.5px;
+  }
+  .future-mom__title {
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 100%;
+    color: #ed6ea7;
+    letter-spacing: -0.02em;
+  }
+  .future-mom__description {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 140%;
+    color: #000000;
+    letter-spacing: -0.02em;
+  }
+  .future-mom__price-current {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    color: #ed6ea7;
+    letter-spacing: -0.02em;
+  }
+  .future-mom__price-old {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 100%;
+    color: #0f0f0f;
+  }
+  .future-mom__date-badge {
+    border-radius: 10px;
+    padding: 4px 10px;
+    height: 16px;
+    font-weight: 400;
+    font-size: 7px;
+    line-height: 130%;
+  }
+  .future-mom__media {
+    margin-top: 0px;
+  }
+  .future-mom__button--primary {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 110%;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 8px 5px;
+    max-width: 114px;
+    width: 100%;
+    height: 30px;
+  }
+  .future-mom__button--secondary {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 110%;
+    color: #ed6ea7;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -285,10 +285,101 @@ $discount-black: #0f0f0f;
   }
 }
 
-@media(max-width: 500px) {
-  .future-mom__container {
-    flex-direction: column;
-    gap: 0px;
-    padding: 0px 34px;
+@media (max-width: 450px) {
+  .future-mom {
+
+    // общий контейнер секции
+    &__container {
+      // сюда: отступы/направление/выравнивание
+    }
+
+    // 1) Плашка "Для будущих мам" (.future-mom__tag)
+    &__tag {
+      max-width: 114px;
+      width: 100%;
+      font-size: 7.5px;
+    }
+
+    // 2) Заголовок "Основной заголовок визуального блока"
+    &__title {
+      @include text($font-weight: 500,
+        $font-size: 27px,
+        $line-height: 100%,
+        $letter-spacing: -0.02em,
+        $color: $title-pink );
+    }
+
+    // 3) Блок "Сопроводительный текст блока"
+    &__description {
+      @include text($font-weight: 300,
+        $font-size: 11px,
+        $line-height: 140%,
+        $letter-spacing: -0.02em,
+        $color: $black );
+    }
+
+    // 4) Блок с ценой 2100 и 4585 ₽
+    &__price {
+      // сюда: gap/align-items
+    }
+
+    &__price-current {
+      @include text($font-weight: 600,
+        $font-size: 20px,
+        $line-height: 100%,
+        $letter-spacing: -0.02em,
+        $color: $title-pink );
+    }
+
+    &__price-old {
+      @include text($font-weight: 300,
+        $font-size: 11px,
+        $line-height: 100%,
+        $color: $discount-black );
+    }
+
+    // 5) Блок "до 20 сентября"
+    &__date-badge {
+      border-radius: 10px;
+      padding: 4px 10px;
+      height: 16px;
+      font-weight: 400;
+      font-size: 7px;
+      line-height: 130%;
+
+    }
+
+    // 6) Изображение
+    &__media {
+      margin-top: 0px;
+    }
+
+    &__image {
+      // сюда: width/max-width/object-fit
+    }
+
+    // 7) Кнопки "Записаться" и "Подробнее"
+    &__actions {
+      // сюда: направление/расстояния/выравнивание
+    }
+
+    &__button--primary {
+       @include text($font-weight: 500,
+      $font-size: 11px,
+      $line-height: 110%,
+      $color: $white );
+      border-radius: 8px;
+      padding: 8px 5px;
+      max-width: 114px;
+      width: 100%;
+      height: 30px;
+    }
+
+    &__button--secondary {
+        @include text($font-weight: 500,
+      $font-size: 11px,
+      $line-height: 110%,
+      $color: $title-pink );
+    }
   }
 }
