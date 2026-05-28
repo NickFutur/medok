@@ -135,6 +135,9 @@
   line-height: 100%;
   color: #0f0f0f;
 }
+.future-mom .rest {
+  text-decoration: line-through;
+}
 .future-mom__date-badge {
   display: flex;
   align-items: center;
@@ -227,4 +230,12 @@
   -o-object-fit: contain;
      object-fit: contain;
   max-width: 640px;
+}
+
+@media (max-width: 500px) {
+  .future-mom__container {
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px 34px;
+  }
 }/*# sourceMappingURL=style.css.map */
