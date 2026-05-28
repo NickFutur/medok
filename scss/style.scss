@@ -12,7 +12,8 @@ $black: #000000;
 $white: #ffffff;
 $discount-black: #0f0f0f;
 
-@mixin text($font-weight,
+@mixin text(
+  $font-weight,
   $font-size,
   $line-height,
   $color,
@@ -20,7 +21,8 @@ $discount-black: #0f0f0f;
   $line-height-850: null,
   $font-size-480: null,
   $line-height-480: null,
-  $letter-spacing: null) {
+  $letter-spacing: null
+) {
   font-weight: $font-weight;
   font-size: $font-size;
   line-height: $line-height;
@@ -111,10 +113,15 @@ $discount-black: #0f0f0f;
     border-radius: 25px;
     padding: 13px 36px;
     background: $white;
-    @include text($font-weight: 400,
+    @include text(
+      $font-weight: 400,
       $font-size: 15px,
       $line-height: 130%,
-      $color: $tag-black );
+      $color: $tag-black
+    );
+    @media (max-width: 450px) {
+      padding: 2px 10px;
+    }
   }
 
   &__tag-icon {
@@ -133,21 +140,29 @@ $discount-black: #0f0f0f;
       text-align: center;
       align-items: center;
     }
+
+    @media (max-width: 450px) {
+      max-width: 300px;
+    }
   }
 
   &__title {
-    @include text($font-weight: 700,
+    @include text(
+      $font-weight: 700,
       $font-size: 55px,
       $line-height: 100%,
       $letter-spacing: -0.02em,
-      $color: $title-pink );
+      $color: $title-pink
+    );
   }
 
   &__description {
-    @include text($font-weight: 300,
+    @include text(
+      $font-weight: 300,
       $font-size: 22px,
       $line-height: 140%,
-      $color: $black );
+      $color: $black
+    );
   }
 
   &__offer {
@@ -170,17 +185,21 @@ $discount-black: #0f0f0f;
   }
 
   &__price-current {
-    @include text($font-weight: 600,
+    @include text(
+      $font-weight: 600,
       $font-size: 40px,
       $line-height: 100%,
-      $color: $title-pink );
+      $color: $title-pink
+    );
   }
 
   &__price-old {
-    @include text($font-weight: 300,
+    @include text(
+      $font-weight: 300,
       $font-size: 22px,
       $line-height: 100%,
-      $color: $discount-black );
+      $color: $discount-black
+    );
   }
 
   .rest {
@@ -195,10 +214,12 @@ $discount-black: #0f0f0f;
     border-radius: 10px;
     padding: 8px 20px;
     background: $white;
-    @include text($font-weight: 400,
+    @include text(
+      $font-weight: 400,
       $font-size: 15px,
       $line-height: 130%,
-      $color: $title-pink );
+      $color: $title-pink
+    );
   }
 
   &__actions {
@@ -224,24 +245,32 @@ $discount-black: #0f0f0f;
         width: 100%;
         height: 100%;
         z-index: 0;
-        background: linear-gradient(180deg,
-            rgba(254, 235, 247, 0) 0%,
-            #feebf7 66.66%);
+        background: linear-gradient(
+          180deg,
+          rgba(254, 235, 247, 0) 0%,
+          #feebf7 66.66%
+        );
       }
+    }
+    @media (max-width: 450px) {
+      flex-wrap: wrap;
     }
   }
 
   &__button {
-    @include text($font-weight: 500,
+    @include text(
+      $font-weight: 500,
       $font-size: 22px,
       $line-height: 110%,
-      $color: $white );
+      $color: $white
+    );
     display: flex;
     z-index: 1;
     justify-content: center;
     align-items: center;
     text-align: center;
     text-decoration: none;
+    box-sizing: border-box;
 
     &--primary {
       width: 100%;
@@ -287,58 +316,51 @@ $discount-black: #0f0f0f;
 
 @media (max-width: 450px) {
   .future-mom {
-
-    // общий контейнер секции
-    &__container {
-      // сюда: отступы/направление/выравнивание
-    }
-
-    // 1) Плашка "Для будущих мам" (.future-mom__tag)
     &__tag {
       max-width: 114px;
       width: 100%;
       font-size: 7.5px;
     }
 
-    // 2) Заголовок "Основной заголовок визуального блока"
     &__title {
-      @include text($font-weight: 500,
+      @include text(
+        $font-weight: 500,
         $font-size: 27px,
         $line-height: 100%,
         $letter-spacing: -0.02em,
-        $color: $title-pink );
+        $color: $title-pink
+      );
     }
 
-    // 3) Блок "Сопроводительный текст блока"
     &__description {
-      @include text($font-weight: 300,
+      @include text(
+        $font-weight: 300,
         $font-size: 11px,
         $line-height: 140%,
         $letter-spacing: -0.02em,
-        $color: $black );
-    }
-
-    // 4) Блок с ценой 2100 и 4585 ₽
-    &__price {
-      // сюда: gap/align-items
+        $color: $black
+      );
     }
 
     &__price-current {
-      @include text($font-weight: 600,
+      @include text(
+        $font-weight: 600,
         $font-size: 20px,
         $line-height: 100%,
         $letter-spacing: -0.02em,
-        $color: $title-pink );
+        $color: $title-pink
+      );
     }
 
     &__price-old {
-      @include text($font-weight: 300,
+      @include text(
+        $font-weight: 300,
         $font-size: 11px,
         $line-height: 100%,
-        $color: $discount-black );
+        $color: $discount-black
+      );
     }
 
-    // 5) Блок "до 20 сентября"
     &__date-badge {
       border-radius: 10px;
       padding: 4px 10px;
@@ -346,28 +368,19 @@ $discount-black: #0f0f0f;
       font-weight: 400;
       font-size: 7px;
       line-height: 130%;
-
     }
 
-    // 6) Изображение
     &__media {
       margin-top: 0px;
     }
 
-    &__image {
-      // сюда: width/max-width/object-fit
-    }
-
-    // 7) Кнопки "Записаться" и "Подробнее"
-    &__actions {
-      // сюда: направление/расстояния/выравнивание
-    }
-
     &__button--primary {
-       @include text($font-weight: 500,
-      $font-size: 11px,
-      $line-height: 110%,
-      $color: $white );
+      @include text(
+        $font-weight: 500,
+        $font-size: 11px,
+        $line-height: 110%,
+        $color: $white
+      );
       border-radius: 8px;
       padding: 8px 5px;
       max-width: 114px;
@@ -376,10 +389,12 @@ $discount-black: #0f0f0f;
     }
 
     &__button--secondary {
-        @include text($font-weight: 500,
-      $font-size: 11px,
-      $line-height: 110%,
-      $color: $title-pink );
+      @include text(
+        $font-weight: 500,
+        $font-size: 11px,
+        $line-height: 110%,
+        $color: $title-pink
+      );
     }
   }
 }
