@@ -31,7 +31,7 @@
 }
 @media (max-width: 480px) {
   .future-mom__container {
-    padding: 16px;
+    padding: 16px 5px;
   }
 }
 .future-mom__content {
@@ -48,6 +48,12 @@
     padding-top: 32px;
     padding-bottom: 0px;
     gap: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .future-mom__content {
+    padding-top: 0px;
+    gap: 6px;
   }
 }
 .future-mom__tags {
@@ -100,10 +106,11 @@
 @media (max-width: 450px) {
   .future-mom__body {
     max-width: 300px;
+    gap: 6px;
   }
 }
 .future-mom__title {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 55px;
   line-height: 100%;
   color: #ed6ea7;
@@ -126,6 +133,11 @@
     flex-direction: row;
     align-items: center;
     margin-top: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .future-mom__offer {
+    margin-top: 6px;
   }
 }
 .future-mom__price {
@@ -192,6 +204,7 @@
 @media (max-width: 450px) {
   .future-mom__actions {
     flex-wrap: wrap;
+    padding-bottom: 16px;
   }
 }
 .future-mom__button {
@@ -290,7 +303,7 @@
     line-height: 130%;
   }
   .future-mom__media {
-    margin-top: 0px;
+    margin-top: -14px;
   }
   .future-mom__button--primary {
     font-weight: 500;
