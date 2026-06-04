@@ -69,6 +69,7 @@
   }
 }
 .future-mom__tag {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -82,7 +83,9 @@
 }
 @media (max-width: 450px) {
   .future-mom__tag {
-    padding: 2px 10px;
+    padding: 2px 17px;
+    height: 23px;
+    gap: 2px;
   }
 }
 .future-mom__tag-icon {
@@ -91,6 +94,12 @@
   -o-object-fit: contain;
      object-fit: contain;
   aspect-ratio: 1/1;
+}
+@media (max-width: 450px) {
+  .future-mom__tag-icon {
+    width: 10px;
+    height: 10px;
+  }
 }
 .future-mom__body {
   display: flex;
@@ -144,6 +153,11 @@
   display: flex;
   align-items: center;
   gap: 20px;
+}
+@media (max-width: 480px) {
+  .future-mom__price {
+    gap: 10px;
+  }
 }
 .future-mom__price-current {
   font-weight: 600;
@@ -241,6 +255,7 @@
   height: 32px;
   -o-object-fit: contain;
      object-fit: contain;
+  background-size: contain;
 }
 .future-mom__media {
   display: flex;
@@ -296,11 +311,14 @@
   }
   .future-mom__date-badge {
     border-radius: 10px;
-    padding: 4px 10px;
+    padding: 4px 13px;
     height: 16px;
-    font-weight: 400;
-    font-size: 7px;
+    font-size: 7.5px;
     line-height: 130%;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: -moz-max-content;
+    max-width: max-content;
   }
   .future-mom__media {
     margin-top: -14px;
@@ -321,5 +339,10 @@
     font-size: 11px;
     line-height: 110%;
     color: #ed6ea7;
+  }
+  .future-mom__button--secondary::after {
+    width: 16px;
+    height: 16px;
+    background-size: contain;
   }
 }/*# sourceMappingURL=style.css.map */

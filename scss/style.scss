@@ -111,6 +111,7 @@ $discount-black: #0f0f0f;
   }
 
   &__tag {
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     gap: 4px;
@@ -124,7 +125,9 @@ $discount-black: #0f0f0f;
       $color: $tag-black
     );
     @media (max-width: 450px) {
-      padding: 2px 10px;
+      padding: 2px 17px;
+      height: 23px;
+      gap: 2px;
     }
   }
 
@@ -133,6 +136,11 @@ $discount-black: #0f0f0f;
     height: 20px;
     object-fit: contain;
     aspect-ratio: 1/1;
+
+    @media (max-width: 450px) {
+      width: 10px;
+      height: 10px;
+    }
   }
 
   &__body {
@@ -190,6 +198,13 @@ $discount-black: #0f0f0f;
     display: flex;
     align-items: center;
     gap: 20px;
+
+    @media (max-width: 850px) {
+      // gap: 12px;
+    }
+    @media (max-width: 480px) {
+      gap: 10px;
+    }
   }
 
   &__price-current {
@@ -300,6 +315,7 @@ $discount-black: #0f0f0f;
         width: 32px;
         height: 32px;
         object-fit: contain;
+        background-size: contain;
       }
     }
   }
@@ -372,11 +388,13 @@ $discount-black: #0f0f0f;
 
     &__date-badge {
       border-radius: 10px;
-      padding: 4px 10px;
+      padding: 4px 13px;
       height: 16px;
-      font-weight: 400;
-      font-size: 7px;
+      font-size: 7.5px;
       line-height: 130%;
+      box-sizing: border-box;
+      width: 100%;
+      max-width: max-content;
     }
 
     &__media {
@@ -404,6 +422,11 @@ $discount-black: #0f0f0f;
         $line-height: 110%,
         $color: $title-pink
       );
+      &::after {
+        width: 16px;
+        height: 16px;
+        background-size: contain;
+      }
     }
   }
 }
