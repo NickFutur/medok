@@ -26,7 +26,8 @@
   .future-mom__container {
     flex-direction: column;
     gap: 0px;
-    padding: 0px 34px;
+    width: 100%;
+    padding: 0px 10px;
   }
 }
 @media (max-width: 480px) {
@@ -42,12 +43,14 @@
   flex-direction: column;
   gap: 53px;
   padding: 50px 0px;
+  z-index: 1;
 }
 @media (max-width: 850px) {
   .future-mom__content {
     padding-top: 32px;
     padding-bottom: 0px;
     gap: 12px;
+    align-items: center;
   }
 }
 @media (max-width: 480px) {
@@ -130,6 +133,7 @@
   font-size: 22px;
   line-height: 140%;
   color: #000000;
+  letter-spacing: -0.02em;
 }
 .future-mom__offer {
   display: flex;
@@ -141,7 +145,8 @@
   .future-mom__offer {
     flex-direction: row;
     align-items: center;
-    margin-top: 12px;
+    margin-top: 13px;
+    gap: 24px;
   }
 }
 @media (max-width: 480px) {
@@ -164,6 +169,7 @@
   font-size: 40px;
   line-height: 100%;
   color: #ed6ea7;
+  letter-spacing: -0.02em;
 }
 .future-mom__price-old {
   font-weight: 300;
@@ -183,10 +189,17 @@
   border-radius: 10px;
   padding: 8px 20px;
   background: #ffffff;
+  box-sizing: border-box;
   font-weight: 400;
   font-size: 15px;
   line-height: 130%;
   color: #ed6ea7;
+}
+@media (max-width: 850px) {
+  .future-mom__date-badge {
+    border-radius: 20px;
+    padding: 6px 26px;
+  }
 }
 .future-mom__actions {
   display: flex;
@@ -203,7 +216,7 @@
     padding-bottom: 32px;
     justify-content: center;
     margin-top: 0px;
-    padding-top: 50px;
+    padding-top: 55px;
   }
   .future-mom__actions::after {
     content: "";
@@ -212,7 +225,7 @@
     width: 100%;
     height: 100%;
     z-index: 0;
-    background: linear-gradient(180deg, rgba(254, 235, 247, 0) 0%, #feebf7 66.66%);
+    background: linear-gradient(180deg, rgba(254, 235, 247, 0) 0%, #feebf7 63.66%);
   }
 }
 @media (max-width: 450px) {
@@ -238,10 +251,10 @@
 }
 .future-mom__button--primary {
   width: 100%;
-  max-width: 230px;
+  max-width: 229px;
   background: #ed6ea7;
   border-radius: 15px;
-  padding: 16px 10px;
+  padding: 18px 10px;
 }
 .future-mom__button--secondary {
   gap: 4px;
@@ -261,11 +274,21 @@
   display: flex;
   flex: 1;
   align-self: flex-end;
+  z-index: 0;
 }
 @media (max-width: 850px) {
   .future-mom__media {
-    align-self: center;
-    margin-top: 32px;
+    display: block;
+    text-align: center;
+    margin-top: -30px;
+    width: 100%;
+    max-width: 602px;
+  }
+}
+@media (max-width: 450px) {
+  .future-mom__media {
+    max-width: 301px;
+    margin: 0 auto;
   }
 }
 .future-mom__image {
@@ -274,6 +297,17 @@
   -o-object-fit: contain;
      object-fit: contain;
   max-width: 640px;
+}
+@media (max-width: 850px) {
+  .future-mom__image {
+    width: 100%;
+    max-width: 602px;
+  }
+}
+@media (max-width: 450px) {
+  .future-mom__image {
+    max-width: 301px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -294,7 +328,6 @@
     font-size: 11px;
     line-height: 140%;
     color: #000000;
-    letter-spacing: -0.02em;
   }
   .future-mom__price-current {
     font-weight: 600;
