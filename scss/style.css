@@ -86,8 +86,8 @@
 }
 @media (max-width: 450px) {
   .future-mom__tag {
-    padding: 2px 17px;
-    height: 23px;
+    padding: 2px 18px;
+    min-height: 23px;
     gap: 2px;
   }
 }
@@ -312,7 +312,6 @@
 
 @media (max-width: 450px) {
   .future-mom__tag {
-    max-width: 114px;
     width: 100%;
     font-size: 7.5px;
   }

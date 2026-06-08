@@ -128,8 +128,8 @@ $discount-black: #0f0f0f;
       $color: $tag-black
     );
     @media (max-width: 450px) {
-      padding: 2px 17px;
-      height: 23px;
+      padding: 2px 18px;
+      min-height: 23px;
       gap: 2px;
     }
   }
@@ -368,7 +368,6 @@ $discount-black: #0f0f0f;
 @media (max-width: 450px) {
   .future-mom {
     &__tag {
-      max-width: 114px;
       width: 100%;
       font-size: 7.5px;
     }
